@@ -1,0 +1,166 @@
+<!--
+Used ChatGPT:
+
+Prompt: Give me a barebones HTML structure for my personal website without adding any additional sections
+
+Response:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    Content goes here
+    <script src="script.js"></script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hobbies</title>
+        <link rel="stylesheet" href="../resources/css/style.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2cb9cfbdf7.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="background">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" style="font-family: 'Times New Roman', Times, serif; font-size: large;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="file:///Users/saranguyen/Desktop/CSCI_3308/lab-3-gui-development-saranguyen06/submission/views/home.html#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" target="_blank" href="file:///Users/saranguyen/Desktop/CSCI_3308/lab-3-gui-development-saranguyen06/submission/views/hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="file:///Users/saranguyen/Desktop/CSCI_3308/lab-3-gui-development-saranguyen06/submission/views/projects.html">Projects</a>
+                        </li>
+                    </ul>
+                    <img src="../resources/img/icon.png" alt="Icon" width="50" height="50" class="ms-auto">
+                </div>
+            </div>
+        </nav>
+        <!--Hobbies Cards-->
+        <div class="container my-5">
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <!--Drawing and Painting-->
+                        <img src="../resources/img/drawing.jpeg" class="card-img-top" alt="Drawing and Painting">
+                        <div class="card-body" style="font-family: 'Times New Roman', Times, serif;">
+                            <h5 class="card-title fw-semibold">Drawing and Painting</h5>
+                            <p class="card-text fst-italic">
+                                My artistic talent is one of my favorite traits of myself. 
+                                It provides an outlet for my creativity and imagination, and the process of creating something is enjoyable. 
+                                I love how I can do whatever I want when I want to create something; it gives me the ability to fully realize my imagination.
+                                My favorite part is putting down the last pencil mark or paint stroke and watching the product come to life.
+                                <br>
+                                (Yes, the picture above is my drawing)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <!--Crocheting-->
+                        <img src="../resources/img/crochet.JPG" class="card-img-top" alt="Crocheting">
+                        <div class="card-body" style="font-family: 'Times New Roman', Times, serif;">
+                            <h5 class="card-title fw-semibold">Crocheting</h5>
+                            <p class="card-text fst-italic">
+                                Crocheting is a hobby I recently picked up, and I have since become obsessed with it.
+                                The rhythmic pace at which you create each knot in a crochet pattern is therapeutic and satisfying (not to mention it is fairly easy to learn).
+                                I love crocheting gifts for others, as well as clothes for my plushies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <!--Cooking and Baking-->
+                        <img src="../resources/img/cooking.JPG" class="card-img-top" alt="Cooking and Baking">
+                        <div class="card-body" style="font-family: 'Times New Roman', Times, serif;">
+                            <h5 class="card-title fw-semibold">Cooking and Baking</h5>
+                            <p class="card-text fst-italic">
+                                As a foodie and someone who loves to eat, I love to cook and bake. 
+                                I especially enjoy cooking or baking with loved ones, such as my mom and my friends.
+                                Some of my favorite and nostalgic memories come from cooking or baking with my loved ones, like when I would try to help my mom in the kitchen as a little kid.
+                                I believe that cooking or baking your own food makes it taste so much better, and doing it with people you love makes invaluable memories.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <!--Volleyball-->
+                        <img src="../resources/img/volleyball.JPG" class="card-img-top" alt="Volleyball">
+                        <div class="card-body" style="font-family: 'Times New Roman', Times, serif;">
+                            <h5 class="card-title fw-semibold">Volleyball</h5>
+                            <p class="card-text fst-italic">
+                                I started playing volleyball in middle school, and I immediately fell in love with the sport.
+                                I enjoy the triumph I feel whenever we win (even the small wins), the lessons I learn from my mistakes, the thrill I feel when I play, and I love the people and teammates I have met and formed a camaradie with over the years.
+                                Volleyball has taught me invaluable lessons, such as leadership and teamwork, and given me priceless memories.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <!--Piano-->
+                        <img src="../resources/img/piano.JPG" class="card-img-top" alt="Piano">
+                        <div class="card-body" style="font-family: 'Times New Roman', Times, serif;">
+                            <h5 class="card-title fw-semibold">Piano</h5>
+                            <p class="card-text fst-italic">
+                                I love playing the piano. 
+                                The best part is when you finally master a song after weeks of continuous practice and hard work. 
+                                I also enjoy learning new songs and adding them to my repertoire.
+                                Although recitals used to be nerve-racking for me, I have since grown to enjoy performing in front of others.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <!--Traveling-->
+                        <img src="../resources/img/vietnam.jpeg" class="card-img-top" alt="Vietnam">
+                        <div class="card-body" style="font-family: 'Times New Roman', Times, serif;">
+                            <h5 class="card-title fw-semibold">Traveling</h5>
+                            <p class="card-text fst-italic">
+                                Traveling is by far one of my favorite things to do.
+                                I love visiting places to learn about the culture, enjoy the food, shop, relax, and spend time with my loved ones.
+                                My favorite place that I have visited is my motherland, Vietnam.
+                                Some of my favorite memories are from places I've traveled to. I simply just can't think of a time where I went on vacation and wasn't happy .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer class="bg-body-tertiary d-flex justify-content-center align-items-center" style="height: 100px; position: sticky; bottom: 0; width: 100%;">
+            <!--Instagram-->
+            <a class="btn btn-floating m-1" target="_blank" href="https://www.instagram.com/saraluvsfood/" role="button">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <!--Linkedin-->
+            <a class="btn btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/sara-nguyen-67266b311/" role="button">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <!--Github-->
+            <a class="btn btn-floating m-1" target="_blank" href="https://github.com/saranguyen06" role="button">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>

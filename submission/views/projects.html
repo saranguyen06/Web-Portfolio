@@ -1,0 +1,161 @@
+<!--
+Used ChatGPT:
+
+Prompt: Give me a barebones HTML structure for my personal website without adding any additional sections
+
+Response:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    Content goes here
+    <script src="script.js"></script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Projects</title>
+        <link rel="stylesheet" href="../resources/css/style.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2cb9cfbdf7.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="background">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" style="font-family: 'Times New Roman', Times, serif; font-size: large;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="file:///Users/saranguyen/Desktop/CSCI_3308/lab-3-gui-development-saranguyen06/submission/views/home.html#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="file:///Users/saranguyen/Desktop/CSCI_3308/lab-3-gui-development-saranguyen06/submission/views/hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" target="_blank" href="file:///Users/saranguyen/Desktop/CSCI_3308/lab-3-gui-development-saranguyen06/submission/views/projects.html">Projects</a>
+                        </li>
+                    </ul>
+                    <img src="../resources/img/icon.png" alt="Icon" width="50" height="50" class="ms-auto">
+                </div>
+            </div>
+        </nav>
+        <!--Projects Carousel-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner" style="font-family: 'Times New Roman', Times, serif;">
+                <div class="carousel-item active">
+                    <img src="../resources/img/doggo_dash_game.png" class="d-block w-100" alt="Doggo Dash Game">
+                    <div class="carousel-caption text-dark bg-light bg-opacity-75">
+                        <h5 class="fw-semibold">Doggo Dash</h5>
+                        <p class="fst-italic">
+                            A 2D arcade-style game where the player controls a dog character using the keyboard's arrow keys.
+                            The primary objective is to maximize the score by collecting treats while avoiding collisions with bomb objects.
+                            The game uses a finite state machine to manage play, pause, and game-over states, with real-time rendering, collision detection, and randomized object spawning. 
+                            Scoring rewards collecting treats and penalizes missed treats or bomb collisions, showcasing core concepts of event-driven programming and interactive graphics.
+                            Created with HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../resources/img/csci1300project.png" class="d-block w-100" alt="Project">
+                    <div class="carousel-caption text-dark bg-light bg-opacity-75">
+                        <h5 class="fw-semibold">Game of Life</h5>
+                        <p class="fst-italic">
+                            Simulates a Game of Life board game, where players interact with a menu-driven interface to make choices that influence their progress. 
+                            Gameplay consists of selecting actions, navigating events, and completing missions determined by the state of the game board. 
+                            The implementation emphasizes control flow, state management, and user interaction through a structured menu system.
+                            Created with C++.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../resources/img/catch.png" class="d-block w-100" alt="Catch Game">
+                    <div class="carousel-caption text-dark bg-light bg-opacity-75">
+                        <h5 class="fw-semibold">Fetch the Treat Game</h5>
+                        <p class="fst-italic">
+                            A simple arcade game where the player catches falling treats to score points, using keyboard controls to move the character. 
+                            The game incorporates real-time input handling, collision detection, and a scoring system, demonstrating basic interactive programming and game mechanics. 
+                            Created with HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../resources/img/hidden_cookie.png" class="d-block w-100" alt="Hidden Cookie">
+                    <div class="carousel-caption text-dark bg-light bg-opacity-75">
+                        <h5 class="fw-semibold">Hidden Cookie Game</h5>
+                        <p class="fst-italic"> 
+                            A puzzle game where the player clicks on colored tiles to find a hidden cookie with as few clicks as possible. 
+                            The game tracks player interactions and provides immediate feedback, demonstrating event-driven programming, simple game logic, and user interface design.
+                            Created with HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../resources/img/cookie_clicker.png" class="d-block w-100" alt="Cookie Clicker">
+                    <div class="carousel-caption text-dark bg-light bg-opacity-75">
+                        <h5 class="fw-semibold">Cookie Clicker</h5>
+                        <p class="fst-italic">A simple program that counts the number of times a cookie is clicked. Created with HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../resources/img/tictactoe.png" class="d-block w-100" alt="tictactoe">
+                    <div class="carousel-caption text-dark bg-light bg-opacity-75">
+                        <h5 class="fw-semibold">TicTacToe</h5>
+                        <p class="fst-italic">Classic TicTacToe game for two players, playable in a web browser. Created with HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../resources/img/mad_libs.png" class="d-block w-100" alt="Mad Libs">
+                    <div class="carousel-caption text-dark bg-light bg-opacity-75">
+                        <h5 class="fw-semibold">Basic Mad Libs</h5>
+                        <p class="fst-italic">A fun game that generates silly stories from user-input words. Created with HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Footer-->
+        <footer class="bg-body-tertiary d-flex justify-content-center align-items-center" style="height: 100px; position: sticky; bottom: 0; width: 100%;">
+            <!--Instagram-->
+            <a class="btn btn-floating m-1" target="_blank" href="https://www.instagram.com/saraluvsfood/" role="button">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <!--Linkedin-->
+            <a class="btn btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/sara-nguyen-67266b311/" role="button">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <!--Github-->
+            <a class="btn btn-floating m-1" target="_blank" href="https://github.com/saranguyen06" role="button">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>

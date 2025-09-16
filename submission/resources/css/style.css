@@ -1,0 +1,72 @@
+.background {
+    background-color: rgb(254, 221, 239);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.box {
+    background-color: rgb(255, 188, 224);
+    max-width: 100%;
+    padding: 4rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.sidebar {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+}
+
+/*Resume sticky side-bar only on medium+ screens */
+@media (min-width: 768px) {
+    .sidebar {
+        position: sticky;
+        top: 2rem; 
+        max-height: calc(100vh - top); /*prevents it from being taller than viewport*/
+        overflow-y: auto; /*enables scrolling inside the sidebar*/
+    }
+}
+
+/*Small screen: no sticky side-bar on resume page*/
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: relative;
+        top: auto;
+        max-height: none;
+        overflow-y: visible;
+    }
+}
+
+    
+.section-title {
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+}
+    
+.resume-content {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+}
+    
+.profile-img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
