@@ -32,7 +32,7 @@ main {
     padding: 2rem;
 }
 
-/*Resume sticky side-bar only on medium+ screens */
+/*Sticky side-bar appears only on medium+ screens*/
 @media (min-width: 768px) {
     .sidebar {
         position: sticky;
